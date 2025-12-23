@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Page - Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#00bfa6", /* teal accent */
+          "background-light": "#121212",
+          "background-dark": "#0a0a0a",
+          card: "#1c1c1c",
+          textlight: "#d1d5db",
+        },
+        fontFamily: {
+          display: ["Be Vietnam Pro", "sans-serif"]
+        },
+        boxShadow: {
+          glow: "0 0 15px rgba(0, 191, 166, 0.4)",
+        }
+      },
+    },
+  }
+  </script>
+  
+  <style>
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+  
+    body {
+      background-color: #0a0a0a;
+      color: #e5e7eb; 
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path></svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Insightful Reads</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+  <nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="index.html">Home</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="list.html">Blog</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="about.html">About</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="contact.html">Contact</a>
+  </nav>
+
+  <button id="menu-btn" class="flex items-center justify-center p-2 md:hidden text-gray-900 dark:text-white">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+  </button>
+</div>
+</header>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-background-dark border-b border-gray-200/80 dark:border-gray-700 px-6 py-4 space-y-3">
+      <a href="index.html" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary">Home</a>
+      <a href="list.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Blog</a>
+      <a href="about.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">About</a>
+      <a href="contact.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Contact</a>
+    </div>
+<main class="flex flex-col lg:flex-row gap-8 px-4">
+<!-- Sidebar -->
+<aside class="w-full lg:w-1/4">
+<div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/50 space-y-6">
+<div>
+
+</div>
+
+</div>
+</aside>
+<!-- Main Content -->
+<div class="w-full lg:w-3/4 flex flex-col gap-6">
+<div class="flex flex-wrap justify-between gap-3">
+<div class="flex flex-col gap-2">
+<p class="text-[#0d141b] dark:text-slate-50 text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Search Results</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-base font-normal leading-normal">Showing 4 results for 'Design Trends'</p>
+</div>
+</div>
+<div class="w-full">
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+<div class="text-[#4c739a] dark:text-slate-400 flex border-none bg-slate-100 dark:bg-slate-800/50 items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d141b] dark:text-slate-50 focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-slate-100 dark:bg-slate-800/50 h-full placeholder:text-[#4c739a] dark:placeholder:text-slate-400 px-4 rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search articles..." value="Design Trends"/>
+<div class="flex items-center justify-center rounded-r-xl border-l-0 border-none bg-slate-100 dark:bg-slate-800/50 pr-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-transparent text-[#0d141b] dark:text-slate-50 gap-2 text-base font-bold leading-normal tracking-[0.015em] h-auto min-w-0 px-0">
+<div class="text-[#4c739a] dark:text-slate-400">
+<span class="material-symbols-outlined">circle</span>
+</div>
+</button>
+</div>
+</div>
+</label>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Result Card 1 -->
+<div class="p-4 bg-slate-50 dark:bg-slate-800/30 rounded-xl transition-shadow hover:shadow-lg">
+<div class="flex flex-col md:flex-row items-stretch justify-between gap-6">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">John Doe • 15 Oct 2023 • UI/UX</p>
+<p class="text-[#0d141b] dark:text-slate-50 text-xl font-bold leading-tight">The Future of Minimalist Web Design</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">Discover the key principles and trends shaping the future of minimalist web design, focusing on user experience and clean aesthetics...</p>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-slate-200 dark:bg-slate-700 text-[#0d141b] dark:text-slate-50 text-sm font-medium leading-normal w-fit hover:bg-slate-300 dark:hover:bg-slate-600" href="#">
+<span class="truncate">Read More</span>
+</a>
+</div>
+<div class="w-full md:w-auto bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-lg flex-1 md:max-w-xs" data-alt="Abstract gradient of blue and purple shapes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7Valv2B3S2_6qNssmyUz7OE_2IDIFPFXhvnyI6xZCNv9uHBD700oTEbu-9YBZAQ5dTXJLKCozIv8o2w2Ehd4SokK7Zy_v98RUs1jXxT6kKpTTQNK1db4530IMqc09eRMlXew6acAZ39LM30M9vXFdlM-tMK75RQsUMlcfNPc_KFncu7lqP2p_VNOVZ8S1bS8oUIurDjKDuq92Idfu-4AKfVB-2OJ8vMzY8RBIkPaUnVLeN3k27SfluL0ZwLwj6SsVMCMS89d4R2k");'></div>
+</div>
+</div>
+<!-- Result Card 2 -->
+<div class="p-4 bg-slate-50 dark:bg-slate-800/30 rounded-xl transition-shadow hover:shadow-lg">
+<div class="flex flex-col md:flex-row items-stretch justify-between gap-6">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">Jane Smith • 12 Oct 2023 • Trends</p>
+<p class="text-[#0d141b] dark:text-slate-50 text-xl font-bold leading-tight">Soft UI: A New Trend in Digital Interfaces</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">An in-depth look at the rise of Soft UI, its characteristics, and how it creates a more approachable and tactile user experience...</p>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-slate-200 dark:bg-slate-700 text-[#0d141b] dark:text-slate-50 text-sm font-medium leading-normal w-fit hover:bg-slate-300 dark:hover:bg-slate-600" href="#">
+<span class="truncate">Read More</span>
+</a>
+</div>
+<div class="w-full md:w-auto bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-lg flex-1 md:max-w-xs" data-alt="Pastel colored geometric shapes on a light background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxWt7zz0O_NLdPa3qO6O5l2P1V_B_y2rIvHMde5IZRmg4si42_HiQ-k_cZeGkLJoFMdBPK2Qr3IPx6_23zwniJIj88qQLxtVJ2nwMbSvQOtdlDyB6eXKhJ4jvezLgjx0SRZND1ThS5NQUPRNHogZIkC88wPmdcbI5GmqXzx2D3Iojz_XykMCJRb9Iv-GSnQul1j3KpAufngaa0BZE0eRz9RpUmZhW7tj7e8ZGsQfMGddMauwIId2lI6DwuvHPBiARopgGC4Rwc3Rs");'></div>
+</div>
+</div>
+<!-- Result Card 3 -->
+<div class="p-4 bg-slate-50 dark:bg-slate-800/30 rounded-xl transition-shadow hover:shadow-lg">
+<div class="flex flex-col md:flex-row items-stretch justify-between gap-6">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">Alex Johnson • 05 Oct 2023 • Web Design</p>
+<p class="text-[#0d141b] dark:text-slate-50 text-xl font-bold leading-tight">Glassmorphism in Modern UI Design Trends</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">Explore the frosted-glass effect that's taking over UI design, and learn how to implement it effectively in your projects for a sleek, modern look.</p>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-slate-200 dark:bg-slate-700 text-[#0d141b] dark:text-slate-50 text-sm font-medium leading-normal w-fit hover:bg-slate-300 dark:hover:bg-slate-600" href="#">
+<span class="truncate">Read More</span>
+</a>
+</div>
+<div class="w-full md:w-auto bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-lg flex-1 md:max-w-xs" data-alt="A blurred background with a frosted glass effect over it" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCV_LEFYblcV3qbtL0mPU5VoCCEjelp-rsJY9VxVgPU8l3pffojN6s62fZr78AC_6-MQ4Wu5B_7-KTZNAdNd_tM7T7QxGmWw6vRB6R9v9B_h2xlv14R9zYsle4nqLwwosNfKNOMNrh6iX77hHPLgqiGUi2dd1aQ8jlSwTMAbXW3gVXOXbQM2N_9ufgVfGc5Jdi0W1SRShuxiqaqd6SRnOnuf8lT403HP0gQy26MBtdS_S3AtCp9xwogK_WbkJCqopA27hTZouvmutg");'></div>
+</div>
+</div>
+<!-- Result Card 4 -->
+<div class="p-4 bg-slate-50 dark:bg-slate-800/30 rounded-xl transition-shadow hover:shadow-lg">
+<div class="flex flex-col md:flex-row items-stretch justify-between gap-6">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">Emily White • 01 Oct 2023 • Trends</p>
+<p class="text-[#0d141b] dark:text-slate-50 text-xl font-bold leading-tight">Typography Trends to Watch in 2024</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">From expressive serifs to kinetic type, we delve into the most exciting typography trends that will define digital design in the coming year.</p>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-slate-200 dark:bg-slate-700 text-[#0d141b] dark:text-slate-50 text-sm font-medium leading-normal w-fit hover:bg-slate-300 dark:hover:bg-slate-600" href="#">
+<span class="truncate">Read More</span>
+</a>
+</div>
+<div class="w-full md:w-auto bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-lg flex-1 md:max-w-xs" data-alt="Close up of various letters in different font styles" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_fmpZrZFAOwr4ElkcYZioG1CkulE7_6nCwVWP8_LQzd_iyeLUWLFC1J1UN9HMgZa-5fyK9O8wwdGBooRzdt6kMWIJlBqHzRizYqKCP_I2VWx4R1aWMB6NRd0wv82zIq0RDRc7Vrw_i5TWA5p4Xy7Y6M-WMx42muH0hHq9y7tl7Un1l2jV-oRuZfLg8hoVjLNRT8CGLtQI5nepSEDEx7EE7Ft5I3RfyChSimFkeTZlyHng8hqgbcoXtMk_J1fIvff5w9V_ReFX-CY");'></div>
+</div>
+</div>
+<!-- Pagination -->
+<nav class="flex items-center justify-center pt-6">
+<ul class="flex items-center gap-2">
+<li><button class="flex items-center justify-center rounded-lg h-10 w-10 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 disabled:opacity-50" disabled=""><span class="material-symbols-outlined text-xl">chevron_left</span></button></li>
+<li><button class="flex items-center justify-center rounded-lg h-10 w-10 font-bold text-sm bg-primary text-white">1</button></li>
+<li><button class="flex items-center justify-center rounded-lg h-10 w-10 font-medium text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">2</button></li>
+<li><button class="flex items-center justify-center rounded-lg h-10 w-10 font-medium text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">3</button></li>
+<li><button class="flex items-center justify-center rounded-lg h-10 w-10 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700"><span class="material-symbols-outlined text-xl">chevron_right</span></button></li>
+</ul>
+</nav>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+</body></html>

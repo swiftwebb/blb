@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Page - Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#00bfa6", /* teal accent */
+          "background-light": "#121212",
+          "background-dark": "#0a0a0a",
+          card: "#1c1c1c",
+          textlight: "#d1d5db",
+        },
+        fontFamily: {
+          display: ["Be Vietnam Pro", "sans-serif"]
+        },
+        boxShadow: {
+          glow: "0 0 15px rgba(0, 191, 166, 0.4)",
+        }
+      },
+    },
+  }
+  </script>
+  
+  <style>
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+  
+    body {
+      background-color: #0a0a0a;
+      color: #e5e7eb; 
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path></svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Insightful Reads</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+  <nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="index.html">Home</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="list.html">Blog</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="about.html">About</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="contact.html">Contact</a>
+  </nav>
+
+  <button id="menu-btn" class="flex items-center justify-center p-2 md:hidden text-gray-900 dark:text-white">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+  </button>
+</div>
+</header>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-background-dark border-b border-gray-200/80 dark:border-gray-700 px-6 py-4 space-y-3">
+      <a href="index.html" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary">Home</a>
+      <a href="list.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Blog</a>
+      <a href="about.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">About</a>
+      <a href="contact.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Contact</a>
+    </div>
+<main class="flex flex-col gap-8 py-8">
+  <!-- PageHeading -->
+  <div class="flex flex-wrap justify-between gap-3 p-4">
+  <p class="text-slate-900 dark:text-slate-50 text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Latest Articles</p>
+  </div>
+  <!-- Chips -->
+  <div class="flex gap-3 px-4 overflow-x-auto pb-2">
+  <button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white pl-4 pr-4">
+  <p class="text-sm font-medium leading-normal">All</p>
+  </button>
+  <button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200/60 dark:bg-slate-800 pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30">
+  <p class="text-slate-800 dark:text-slate-300 text-sm font-medium leading-normal">Design</p>
+  </button>
+  <button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200/60 dark:bg-slate-800 pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30">
+  <p class="text-slate-800 dark:text-slate-300 text-sm font-medium leading-normal">Technology</p>
+  </button>
+  <button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200/60 dark:bg-slate-800 pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30">
+  <p class="text-slate-800 dark:text-slate-300 text-sm font-medium leading-normal">Productivity</p>
+  </button>
+  <button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200/60 dark:bg-slate-800 pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30">
+  <p class="text-slate-800 dark:text-slate-300 text-sm font-medium leading-normal">Marketing</p>
+  </button>
+  </div>
+  <!-- ImageGrid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+    <a href="detail.html">
+  <div class="flex flex-col gap-4 pb-3 group">
+  <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Abstract gradient of blue and purple hues" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCkEkWcI9sRTLU7ok4_zZquM9UwGfqQiCiF3Qe0vPGkG_Z5uYvTnj_330v5yJMwAwa5ziGEJMODsK9_ZiilAUdAlj8G66VVZ5Hbnl5FD4liybjZJkf4IlOpAYUvnZIc4Mc1bLkxyInt8hAQqYvHQ-w7QQcuWSuI-46hOH4VNn3Bx_OF6D5K4Kko210AbL_0MrTeT6sfbzuoD2zJkRUM9tKUT6VmaYAxTyd1MVIq--7VHHEZUIi-8p-rSUiyfQS1-7aD8EQPez_8-A");'></div>
+  <div class="flex flex-col gap-2">
+  <p class="text-primary text-sm font-semibold leading-normal">Design</p>
+  <p class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight group-hover:text-primary dark:group-hover:text-primary">The Art of Minimalist Web Design</p>
+  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Explore how less is more in creating beautiful and functional websites that captivate users.</p>
+  <p class="text-slate-500 dark:text-slate-500 text-xs font-normal leading-normal mt-1">June 15, 2024</p>
+  </div>
+  </div>
+  </a>
+  <a href="detail.html">
+  <div class="flex flex-col gap-4 pb-3 group">
+  <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Laptop on a desk with code and graphs on screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDokvyGWLqohvKXnr93efL9iADZ0thcdk4YWEzsZaaeVq4M3Q1bjFqwKGDVJ7ihDkHrCYDSJl573jJCoCtgebU90LCYuuuDAkEw0zLCjKVFbj73_1bbj7zQ6RJ7HpbcGP58lAG7gBcqD-YQpFi31PIxGIKOO-RoG-fvumdbFDQ-Qf-6ZpkhLZniyJnukjbbfKD7JyrXeTDcV38uo_E_rl9rg020kxlpNGwn3y_Ac_LjB0NJzp31mZeCJzy7GzMayHTuSM6TM50Ch7s");'></div>
+  <div class="flex flex-col gap-2">
+  <p class="text-primary text-sm font-semibold leading-normal">Productivity</p>
+  <p class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight group-hover:text-primary dark:group-hover:text-primary">10 Productivity Hacks for Creatives</p>
+  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Boost your efficiency and streamline your workflow with these simple, yet effective productivity tips.</p>
+  <p class="text-slate-500 dark:text-slate-500 text-xs font-normal leading-normal mt-1">June 12, 2024</p>
+  </div>
+  </div>
+  </a>
+  
+  <a href="detail.html">
+  <div class="flex flex-col gap-4 pb-3 group">
+  <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Close up of a futuristic circuit board with glowing lights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDM5JYZDYwBWLd71JvGS8N2iUp_hk0fTcZn4hnhQRixBSMN6QFMzJ89-2k3bgh5hOQYKAlPOpastF9fkNnnlsJ0f4Rlr7F3iPoPeFrFc2GCWKkGdjQ3F0UvfORC5awlUHgRQXAnzLL_i5uo1q8LgUZIBG3qT686oOYtwF-9gu7Gs-ipGEGpSNPgOVlQBpDPwewBdNxQ17dwDg6qpu2YH_v6Q2Neya3Gwom5OtZc85506f8ZTykdPbjfmOrofUksHslc7D1Q6K5aTQw");'></div>
+  <div class="flex flex-col gap-2">
+  <p class="text-primary text-sm font-semibold leading-normal">Technology</p>
+  <p class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight group-hover:text-primary dark:group-hover:text-primary">Demystifying AI in Modern Technology</p>
+  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">An introductory look into the world of Artificial Intelligence and its profound impact on our daily lives.</p>
+  <p class="text-slate-500 dark:text-slate-500 text-xs font-normal leading-normal mt-1">June 10, 2024</p>
+  </div>
+  </div>
+  </a>
+  <a href="detail.html">
+  <div class="flex flex-col gap-4 pb-3 group">
+  <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Colorful sticky notes on a white board with design sketches" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfDJUKpBTrglBDQqnIna2KXE2EHYraq-bYunNrVwBFNe0oplz4VmlEyQ2oGZQLC-zcuhSmmaIrgIccWKDS1PsKxvjeANKVBBuvBzXtGAQgGkMA5QHB6kU07_JxQwi4xk70dmcpK8A_AefCqHqQHi0lbZDxOVNZBppFnyA82tQPC1OiqnJRyPbVbjubAgFBLutwS48xInBx0HsJv4b3AJyUQLT4gVP_GVXb1QsFXtnsS2Bom_rJckNMpcI_sskohW-4snieVZTOVvc");'></div>
+  <div class="flex flex-col gap-2">
+  <p class="text-primary text-sm font-semibold leading-normal">Design</p>
+  <p class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight group-hover:text-primary dark:group-hover:text-primary">A Guide to User-Centric Design Principles</p>
+  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Learn the core concepts that put the user at the heart of your product for better engagement.</p>
+  <p class="text-slate-500 dark:text-slate-500 text-xs font-normal leading-normal mt-1">June 8, 2024</p>
+  </div>
+  </div>
+  </a>
+  <a href="detail.html">
+  <div class="flex flex-col gap-4 pb-3 group">
+  <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Team of people collaborating around a computer screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlkDz1pZeLVDh99DbdL6fJ4w3ISqmXbe6g8hMpap-t6M9Jjg7V2ZarqCkSbLQC6uJNOgtbHiJ1aI7BsG-Yl2jyx4fE5M0Fhu9Vn5UqFCIGUy3E4qnUZqGOWQsh1E4mCmV1V0p3QhJ6z3P0cmTlm5Lf5Oma07l2YELBs_Is8gYaZpYtznt-Gq_1p2wt5BM5ihHIDbWckQymf8Fq6Km5V8mjk6AO61Q-uLr4ex2TNP6O__mVyPW4MQNO3ZM3fj1VPAvb8R-zCo7-jsA");'></div>
+  <div class="flex flex-col gap-2">
+  <p class="text-primary text-sm font-semibold leading-normal">Technology</p>
+  <p class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight group-hover:text-primary dark:group-hover:text-primary">The Future of Remote Collaboration Tools</p>
+  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">A roundup of the best new tools that are changing how we work together from anywhere in the world.</p>
+  <p class="text-slate-500 dark:text-slate-500 text-xs font-normal leading-normal mt-1">June 5, 2024</p>
+  </div>
+  </div>
+  </a>
+  <a href="detail.html">
+  <div class="flex flex-col gap-4 pb-3 group">
+  <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Person writing in a notebook with a focused expression" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_3Ecmng3WMREJUEE0WzgNv6IlLUSjUk1uoo4M8wvr6aCy3JtkcfRtGAM7SWf8yXIPAHAbpfrRPG4eFAS01jFqd76euovtdeVlo0c2uKk31F88PmRqamLJ2yLTSox_lypjMA6-0dee7cETA5kpVkxacnBNrkXutS-1IVI51rJX-jBX8rRrWlF0j2SS5cST8-S_5E51KOHq5mDpWX79smP7xvKQ3NTUVslsj9bh4DgnGy2I69EwN_6oT1_rOkvulxpcv_cQjevxTHQ");'></div>
+  <div class="flex flex-col gap-2">
+  <p class="text-primary text-sm font-semibold leading-normal">Productivity</p>
+  <p class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight group-hover:text-primary dark:group-hover:text-primary">Crafting a Powerful Personal Brand</p>
+  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Step-by-step instructions on building an online presence that stands out and reflects your values.</p>
+  <p class="text-slate-500 dark:text-slate-500 text-xs font-normal leading-normal mt-1">June 2, 2024</p>
+  </div>
+  </div>
+  </a>
+  
+  </div>
+  <!-- Pagination -->
+  <div class="flex items-center justify-center p-4">
+  <a class="flex size-10 items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary" href="#">
+  <span class="material-symbols-outlined">chevron_left</span>
+  </a>
+  <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white dark:text-slate-900 rounded-full bg-primary" href="#">1</a>
+  <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-300 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30" href="#">2</a>
+  <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-300 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30" href="#">3</a>
+  <span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-300 rounded-full">...</span>
+  <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-300 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30" href="#">8</a>
+  <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-300 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30" href="#">9</a>
+  <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-300 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30" href="#">10</a>
+  <a class="flex size-10 items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary" href="#">
+  <span class="material-symbols-outlined">chevron_right</span>
+  </a>
+  </div>
+  </main>
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+</body></html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Page - Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#00bfa6", /* teal accent */
+          "background-light": "#121212",
+          "background-dark": "#0a0a0a",
+          card: "#1c1c1c",
+          textlight: "#d1d5db",
+        },
+        fontFamily: {
+          display: ["Be Vietnam Pro", "sans-serif"]
+        },
+        boxShadow: {
+          glow: "0 0 15px rgba(0, 191, 166, 0.4)",
+        }
+      },
+    },
+  }
+  </script>
+  
+  <style>
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+  
+    body {
+      background-color: #0a0a0a;
+      color: #e5e7eb; 
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path></svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Insightful Reads</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+  <nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="index.html">Home</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="list.html">Blog</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="about.html">About</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="contact.html">Contact</a>
+  </nav>
+
+  <button id="menu-btn" class="flex items-center justify-center p-2 md:hidden text-gray-900 dark:text-white">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+  </button>
+</div>
+</header>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-background-dark border-b border-gray-200/80 dark:border-gray-700 px-6 py-4 space-y-3">
+      <a href="index.html" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary">Home</a>
+      <a href="list.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Blog</a>
+      <a href="about.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">About</a>
+      <a href="contact.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Contact</a>
+    </div>
+<main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+<div class="text-center py-12 md:py-20">
+<h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tighter text-slate-900 dark:text-white">A Space for Modern Ideas</h1>
+<p class="mt-4 max-w-2xl mx-auto text-base md:text-lg font-normal text-slate-500 dark:text-slate-400">Discover stories, design inspiration, and thoughtful articles in a clean, uncluttered reading environment.</p>
+</div>
+
+<div class="grid grid-cols-1 gap-10">
+    <div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 lg:col-span-2">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract gradient of blue and purple hues" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzv9D_SYBcjMcSzN28kxQmRI9MvD-Z2M1UrfxBpZe45JvpbYZiTLWh6q_mZGixhLlF8g-Px5yzTuY5i2QeWufFx1hmA_LEqF1sXSRxTniMzvrqA59tU2YOfzVHdVw1cOzAFtCDJOvQ9C8bLdLmqE4fGKNvXn-6x8btO8Xta6YnP635_qZQEROwZNuMuKM42RHJayI1K6W_KoDBmoxyNikwW85seetOZ9CG5pJ9vPaP9wfdHqxghJmqNioRyNprdkOTn5ULcwb6ntI");'></div>
+<div class="p-6 flex flex-col gap-3">
+<p class="text-primary text-sm font-bold">Inspiration</p>
+<h3 class="text-2xl font-bold leading-tight text-slate-900 dark:text-white">The Art of Simplicity in Modern Design</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Explore how minimalism is shaping the future of digital and physical products, creating more intuitive and beautiful user experiences.</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs font-normal">Jane Smith • Oct 28, 2023</p>
+</div>
+</div>
+
+</div>
+
+<div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-slate-900 dark:text-white pb-6 border-b border-slate-200 dark:border-slate-800">Recent Posts</h2>
+
+<div class="divide-y divide-slate-200 dark:divide-slate-800">
+    
+<a href="detail.html">
+<div class="flex flex-col sm:flex-row items-start gap-6 py-8">
+<div class="w-full sm:w-1/3 bg-center bg-no-repeat aspect-video sm:aspect-square bg-cover rounded-lg" data-alt="A person typing on a vintage typewriter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCU8EpRD3EAwCfjSRPqyUNgehWHH7SL-zk9uKtmY4zoqKKgYIDrU6dS-iIuxQRnWeVxISlNhzEPunGdkCZpWmXcDcOopgfFvroCK-cYjfA1TwPPbp2ne5XUmnYHbTAuvHfrZv9xaq-bQRfaAlVq13mMy8NWslYQxfg83EHz1onJnfICGLbAwCkR97kzmRT2KT7kjeRLxra3_mBp_y2ZDPt0eDRZyycLeLSMgJJ4jbpGb3jCMFs2fSu7zugJoUPq74z5WpHZ5PgCm_0");'></div>
+<div class="flex flex-col gap-2 flex-1">
+<p class="text-primary text-sm font-bold">Writing</p>
+<h3 class="text-xl font-bold leading-tight text-slate-900 dark:text-white">Finding Your Voice: A Guide for New Writers</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Tips and tricks to help you develop a unique writing style that resonates with your audience.</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs font-normal mt-2">Alex Johnson • Oct 22, 2023</p>
+</div>
+</div>
+</a>
+
+<a href="detail.html">
+<div class="flex flex-col sm:flex-row items-start gap-6 py-8">
+<div class="w-full sm:w-1/3 bg-center bg-no-repeat aspect-video sm:aspect-square bg-cover rounded-lg" data-alt="Close-up of a camera lens" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBidIkPRfd3MY7OWq0yxBFc45jmukypmr2A--tNAl5lv29kaezY7zk9ExdG--CFbH4mPnlmqae32ZcDsg-b9SD8BZCwdVmBhZ9qz3In9QoBiTPQUVY9b652fq_5IykwKUxZHWj9GmC8VXriUBQoMvYuPWNvd7aGcmdbIwQ2MZxNAxS2e5v6XsDnYZkb7mfQ3We6oVAyJj6EOYmOp9tKk1SGEEv6fyFNO-WEQdYjV2aU4YjNMzsjLCZ0KJvbtghgvsiZVbffQTgjXfw");'></div>
+<div class="flex flex-col gap-2 flex-1">
+<p class="text-primary text-sm font-bold">Photography</p>
+<h3 class="text-xl font-bold leading-tight text-slate-900 dark:text-white">Mastering Composition: The Rule of Thirds</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Learn how to use this fundamental photography principle to create more balanced and engaging photos.</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs font-normal mt-2">Emily Carter • Oct 20, 2023</p>
+</div>
+</div>
+</a>
+
+<a href="detail.html">
+<div class="flex flex-col sm:flex-row items-start gap-6 py-8">
+<div class="w-full sm:w-1/3 bg-center bg-no-repeat aspect-video sm:aspect-square bg-cover rounded-lg" data-alt="A serene landscape with mountains and a lake" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpg1D-Hc-97m58Z5PDlHbyL4X7oJcqOA4s6wNyPJ2Ly94Fqdi6fbSVDFBvhXQrYo4_rUt_oc5GDDbWDbRRodUOqptxMY4__WV9N3aziGDa0mMTqzf5mUVtT-TxVtoTy4uZr_YslzaFqF47nojwcYBhWjCdncIBXHFFgMmO7zzEJT-n1x9Yk__u1N7DYoxFmPrEYo5rC2gJpmUyJHBa4Rl4vhZaKLKxxbLjVb_xAprIzHVELBPhbrHzsFpxUM0o72bvF749Ub39ViA");'></div>
+<div class="flex flex-col gap-2 flex-1">
+<p class="text-primary text-sm font-bold">Travel</p>
+<h3 class="text-xl font-bold leading-tight text-slate-900 dark:text-white">Minimalist Packing for a Week-Long Getaway</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Discover how to travel lighter and smarter with our essential packing list for the modern traveler.</p>
+<p class="text-slate-400 dark:text-slate-500 text-xs font-normal mt-2">Mark Roberts • Oct 18, 2023</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+<aside class="lg:col-span-1 space-y-8">
+    <a href="search.html">
+<div>
+<h3 class="text-xl font-bold leading-tight text-slate-900 dark:text-white pb-4 border-b border-slate-200 dark:border-slate-800">Search</h3>
+<div class="relative mt-4">
+<input class="w-full h-10 px-4 pr-10 rounded-lg bg-slate-100 dark:bg-slate-800 border-transparent focus:ring-primary focus:border-primary" placeholder="Search articles..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+</div>
+</div>
+</a>
+<div>
+
+</div>
+<div>
+
+</div>
+</aside>
+</div>
+</main>
+<footer class="w-full flex justify-center py-10 mt-12 border-t border-slate-200 dark:border-slate-800">
+    <div class="layout-content-container flex flex-col md:flex-row items-center justify-between w-full max-w-[960px] flex-1 px-4 sm:px-10">
+    <p class="text-sm text-slate-500 dark:text-slate-400">© 2024 Insightful Reads. All Rights Reserved.</p>
+    <div class="flex items-center gap-4 mt-4 md:mt-0">
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+    </a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+    </a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.019c0 4.438 2.865 8.225 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.019C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg>
+    </a>
+    </div>
+    </div>
+    </footer>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+</body></html>

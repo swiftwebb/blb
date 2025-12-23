@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Page - Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#00bfa6", /* teal accent */
+          "background-light": "#121212",
+          "background-dark": "#0a0a0a",
+          card: "#1c1c1c",
+          textlight: "#d1d5db",
+        },
+        fontFamily: {
+          display: ["Be Vietnam Pro", "sans-serif"]
+        },
+        boxShadow: {
+          glow: "0 0 15px rgba(0, 191, 166, 0.4)",
+        }
+      },
+    },
+  }
+  </script>
+  
+  <style>
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+  
+    body {
+      background-color: #0a0a0a;
+      color: #e5e7eb; 
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path></svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Insightful Reads</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+  <nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="index.html">Home</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="list.html">Blog</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="about.html">About</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="contact.html">Contact</a>
+  </nav>
+
+  <button id="menu-btn" class="flex items-center justify-center p-2 md:hidden text-gray-900 dark:text-white">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+  </button>
+</div>
+</header>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-background-dark border-b border-gray-200/80 dark:border-gray-700 px-6 py-4 space-y-3">
+      <a href="index.html" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary">Home</a>
+      <a href="list.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Blog</a>
+      <a href="about.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">About</a>
+      <a href="contact.html" class="block text-sm font-medium text-gray-900 dark:text-white hover:text-primary">Contact</a>
+    </div>
+<main class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+<div class="flex flex-col lg:flex-row gap-16">
+<div class="flex-1">
+<div class="flex flex-wrap justify-between gap-3 mb-8">
+<div class="flex w-full flex-col gap-3">
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-[#0d141b] dark:text-white">Get in Touch</h1>
+<p class="text-base font-normal leading-normal text-slate-600 dark:text-slate-400 max-w-lg">Have a question, a project idea, or just want to say hello? I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<label class="flex flex-col w-full">
+<p class="text-sm font-medium leading-normal pb-2 text-[#0d141b] dark:text-slate-200">Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141b] dark:text-slate-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark h-12 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-3 text-base font-normal leading-normal" placeholder="Enter your name" value=""/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-sm font-medium leading-normal pb-2 text-[#0d141b] dark:text-slate-200">Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141b] dark:text-slate-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark h-12 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-3 text-base font-normal leading-normal" placeholder="Enter your email address" value=""/>
+</label>
+</div>
+<label class="flex flex-col w-full">
+<p class="text-sm font-medium leading-normal pb-2 text-[#0d141b] dark:text-slate-200">Message</p>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-[#0d141b] dark:text-slate-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark h-36 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-3 text-base font-normal leading-normal" placeholder="Write your message here..."></textarea>
+</label>
+<button class="flex w-full md:w-auto min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[-0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Send Message</span>
+</button>
+</div>
+</div>
+<aside class="w-full lg:w-80 flex-shrink-0 space-y-10">
+<div>
+<h3 class="text-xl font-bold leading-tight tracking-[-0.015em] mb-4 text-[#0d141b] dark:text-white">Contact Details</h3>
+<div class="space-y-3">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-xl text-primary" data-icon="mail">mail</span>
+<a class="text-base text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="mailto:hello@myblog.com">hello@myblog.com</a>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold leading-tight tracking-[-0.015em] mb-4 text-[#0d141b] dark:text-white">Follow Me</h3>
+<div class="flex items-center gap-4">
+<a class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<img class="w-6 h-6" data-alt="Twitter social media icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJpyrOGYbRx1ng3hrcvME0WNaMn7CojJB__3SS3rroGjxQRzp3kS6qay_6TJzo8QjAJeo-FxU0nLiXo2gjgBvQJssLmG1tfdUTPyUxkpn98CQI8Og3XTt3PEAkJrdPJn-CPSPY3mLzbqsc5oPax68UR6eKTYidQ558YmWMMsWxpoPnFND4BqACSoDFGiTqQK2MfmDSJiv9OOa6I8obOX86S3Gpz4bMFKYyprj574m-NfZfsR-HGhCEVAbVoJHq4NbvUq4lDcJIstQ"/>
+</a>
+<a class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<img class="w-6 h-6" data-alt="LinkedIn social media icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAobzLxEKROisAVuPEgj4bbXpa3l5p0JfDtHI6sMuwGeU3kyuYAPVejoVOx_q9GfaOt3ebd9xodLKmR6B5ZIyOoZZcwP6bOW6Hk_yKCsEj2h_-9Ki-0e7G9HKyCIQwAdGs6r91luygCVoNi5j0JI1sJPoyujYIz-W6ZzO9bFNuKa733lrYSinbLNOJVjMk2rdRCSjjZy91wHAsHIN37so8d6d6bQMUFOl6r6K_DwEWmBcR2yGO0Kac3fzQVdDL9zRRBJXECk_lukCY"/>
+</a>
+<a class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<img class="w-6 h-6" data-alt="Instagram social media icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrlhVJTH7HjDgmrtzh1MAv0raO9_lsBR_N6OvAKzqKZust1Sw-ST0ru20gvfjhI7wr5sLwZgsCvYQC3rLW0yZ7WjrH6NKD5UwaArpjxFnqoXHwJgfZNZEPbFYzcEP0eyL3fjV8cWUZpqrgbaBGgbfLqKaDZlwBlOtZJQ5wHY9PhwyDr_XAppKANyCb2TDvDp91nPhTzp4xy9HoWw392Eiy9iwpGtBhQcHXLPwu2eIR3vqLWYG9l-0PBKy4elGiYAmgD8M3yNuIRRs"/>
+</a>
+<a class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<img class="w-6 h-6" data-alt="GitHub social media icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWJ-1JWRxEGn8r-svF3qE_GSyTfBTx9OYHa0KP53GG_t2Mg6j57EGG2Jy-kCtQeAXbb5VVQvy_PiOgYHuJUZSPVKR78bopE9g04Zex7-7MNIaQAYhSfMY7YvAw9hHmlRw2DA1xJ8J0NqNNocFvDrCGIbkyCLp3RBVTOR15nn5h6muoujMvr2moMzq_-jX0BNMrxyXfY30Dx4PMynUNxDRBz9ig9osqEy_doLsemsMUn82gEAB7EpYxwvX5kcPwTrp0Ax8G3Yq76So"/>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold leading-tight tracking-[-0.015em] mb-4 text-[#0d141b] dark:text-white">Location</h3>
+<div class="aspect-video w-full overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="A map showing the general location of an office in a city." data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqI2p6J4Far0eiw32Nmk8jPC3t-4Xs88lqgu55qxVzVhvPXLhJdn6J3PL-ZWdvP2JAHYUYIXinGUjYPAGLVtwBdV7sqBXKSCN2mzznv0N9A0J1hO-CpjJcqPtV02kEmhK4YfE5g2sAv0zhuHANvLtzVKs9HER25yRMxFqvV8vXLiIxLs2SJJm5hzRLALDM-rRUI-oI8emWEI9aC7IwYJofw8IYkfOFYFk4fcXGAPAsnnQPd4IDAIHQPAATKIH8-Jr5fDvZWjHYgr0"/>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+</body></html>
